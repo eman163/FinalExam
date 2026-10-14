@@ -1,11 +1,11 @@
 # Word Sprint Game
 
-`Word Sprint Game` is a Java Swing word game inspired by classroom word-game projects and TV/mobile puzzle games. The player enters a name, chooses a theme, and solves a series of timed word rounds before running out of lives. The game features audio playback, visual animations, and a prize system.
+`Word Sprint Game` is a Java Swing word game inspired by classroom word-game projects. The player enters a name, chooses a theme, and solves a series of timed word rounds before running out of lives. The game features audio playback, visual animations, and a prize system.
 
 ## How the game works
 
 1. Enter your player name.
-2. Choose a theme: `Mixed Showdown`, `Space`, `Food`, or `Animals`.
+2. Choose a theme: `Mixed Game`, `Space`, `Food`, or `Animals`.
 3. Press **Start / Restart Game**.
 4. Each round shows either:
    - an **Unscramble Round**, or
@@ -29,9 +29,12 @@
 - File read/write for persistent high scores
 - `JFrame` with layout managers
 - Multiple Swing widgets including `JButton`, `JLabel`, `JTextField`, `JComboBox`, `JOptionPane`, `JScrollPane`, and `JProgressBar`
-- **Audio playback** of "jeopardy.wav" sound 
+- **Audio playback** of "jeopardy.wav" sound comes from https://freesound.org/people/1000kcirtap/sounds/554635
 - **Animation** showing check mark (correct) and X mark (incorrect)
-- **Prize images** (cruise, gas, spa)
+- **Prize images:**
+    - cruise - https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4460493
+    - gas - https://pixabay.com/photos/fuel-gas-station-refueling-gas-6999650
+    - spa - https://pixabay.com/illustrations/ai-generated-spa-massage-meditation-8970246
 - **Prize system** that awards random prizes when you answer correctly
 - Queue functionality using `LinkedList`
 
@@ -73,20 +76,20 @@ The required code comments are placed directly in the source files so the instru
 
 ### Compile the project
 
-```powershell
+```
 mvn test-compile
 ```
 
 ### Run the self-checks used for verification
 
-```powershell
+```
 java -cp "target/classes;target/test-classes" org.example.game.GameSessionTest
 java -cp "target/classes;target/test-classes" org.example.game.ScoreManagerTest
 ```
 
 ### Start the game
 
-```powershell
+```
 java -cp target/classes org.example.Main
 ```
 
