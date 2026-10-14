@@ -1,4 +1,4 @@
-# Word Sprint Showdown
+# Word Sprint Game
 
 `Word Sprint Showdown` is a Java Swing word game inspired by classroom word-game projects and TV/mobile puzzle games. The player enters a name, chooses a theme, and solves a series of timed word rounds before running out of lives. The game features audio playback, visual animations, and a prize system.
 
