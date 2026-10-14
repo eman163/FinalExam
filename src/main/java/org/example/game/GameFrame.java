@@ -46,7 +46,7 @@ public class GameFrame extends JFrame {
     private final JLabel livesLabel = new JLabel("Lives: 3");
     private final JLabel roundLabel = new JLabel("Round: 0 / 0");
     private final JLabel themeLabel = new JLabel("Theme: None");
-    private final JLabel roundTitleLabel = new JLabel("Word Sprint Showdown", SwingConstants.CENTER);
+    private final JLabel roundTitleLabel = new JLabel("Word Sprint Game", SwingConstants.CENTER);
     private final JTextArea promptArea = new JTextArea(6, 30);
     private final JLabel assistLabel = new JLabel("Choose a theme and press Start.");
     private final JTextField guessField = new JTextField(16);
@@ -67,7 +67,7 @@ public class GameFrame extends JFrame {
     private boolean instructionsShown;
 
     public GameFrame() {
-        super("Word Sprint Showdown");
+        super("Word Sprint Game");
         buildInterface();
         wireActions();
         refreshLeaderboard();
@@ -233,7 +233,7 @@ public class GameFrame extends JFrame {
             instructionsShown = true;
             JOptionPane.showMessageDialog(
                     this,
-                    "Welcome to Word Sprint Showdown!\n\n"
+                    "Welcome to Word Sprint Game!\n\n"
                             + "1. Enter a name and pick a theme.\n"
                             + "2. Solve each puzzle before time runs out.\n"
                             + "3. A wrong answer, skip, or timeout costs one life.\n"
