@@ -20,7 +20,7 @@ public class ScoreEntry {
     public ScoreEntry(String playerName, int score, String theme, LocalDateTime timestamp) {
         this.playerName = sanitize(playerName, "Player");
         this.score = Math.max(score, 0);
-        this.theme = sanitize(theme, "Mixed Showdown");
+        this.theme = sanitize(theme, "Mixed Game");
         this.timestamp = timestamp == null ? LocalDateTime.now() : timestamp;
     }
 

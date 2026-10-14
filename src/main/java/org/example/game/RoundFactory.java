@@ -17,7 +17,7 @@ public final class RoundFactory {
         String cleanTheme;
 
         if (theme == null) {
-            cleanTheme = "MIXED SHOWDOWN";
+            cleanTheme = "MIXED Game";
         } else {
             cleanTheme = theme.trim().toUpperCase();
         }

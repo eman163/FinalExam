@@ -4,7 +4,7 @@ import java.util.Queue;
 
 public class GameSession {
     private String playerName = "Player";
-    private String theme = "Mixed Showdown";
+    private String theme = "Mixed Game";
     private Queue<PuzzleRound> upcomingRounds;
     private PuzzleRound currentRound;
     private int score;
@@ -23,7 +23,7 @@ public class GameSession {
         }
 
         if (theme == null || theme.isBlank()) {
-            this.theme = "Mixed Showdown";
+            this.theme = "Mixed Game";
         } else {
             this.theme = theme.trim();
         }

@@ -40,7 +40,7 @@ public class GameFrame extends JFrame {
 
     // Required element: Swing elements - JButton, JLabel, JTextField, JComboBox, JOptionPane, JScrollPane, JProgressBar
     private final JTextField nameField = new JTextField(12);
-    private final JComboBox<String> themeCombo = new JComboBox<>(new String[]{"Mixed Showdown", "Space", "Food", "Animals"});
+    private final JComboBox<String> themeCombo = new JComboBox<>(new String[]{"Mixed Game", "Space", "Food", "Animals"});
     private final JButton startButton = new JButton("Start / Restart Game");
     private final JLabel scoreLabel = new JLabel("Score: 0");
     private final JLabel livesLabel = new JLabel("Lives: 3");
@@ -101,7 +101,7 @@ public class GameFrame extends JFrame {
         setupPanel.add(new JLabel("Theme:"), gbc);
 
         gbc.gridx = 3;
-        themeCombo.setToolTipText("Choose a topic or use Mixed Showdown for a variety of puzzles.");
+        themeCombo.setToolTipText("Choose a topic or use Mixed Game for a variety of puzzles.");
         setupPanel.add(themeCombo, gbc);
 
         gbc.gridx = 4;
