@@ -38,7 +38,7 @@
 - **Prize system** that awards random prizes when you answer correctly
 - Queue functionality using `LinkedList`
 
-## Audio and Animations from Lesson 10
+## Audio and Animations
 
 This project integrates resources from Lesson 10:
 
